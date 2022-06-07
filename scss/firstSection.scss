@@ -1,9 +1,9 @@
 @import "mixins";
 @import "variables";
-.section-one{
+.landing-section{
     min-height: 100vh;
     position: relative;
-    padding: 0 $sm-screen-padding;
+    
     &:before{
         content:"";
         position: absolute;
@@ -23,12 +23,18 @@ nav{
 
 .logo{
     flex-grow:1;
+    font-weight: 800;
+    font-size: 2rem;
 }
 .navigation{
-    display: flex;
     justify-content: space-evenly;
     flex-grow:1;
     display: none;
+    
+    @include responsive{
+        display: flex;
+        align-items: center;
+    }
 }
 .landing{
     height: 100%;
@@ -41,9 +47,8 @@ nav{
     text-align: center;
     @include toRem(margin-top, 40);
 }
+
 .landing__heading{
-    @include toRem(font-size, 40);
-    font-weight: 700;
     @include toRem(margin-top, 27);
 }
 .landing__content{
@@ -99,4 +104,12 @@ nav{
     position: relative;
     bottom: 2rem;
     right: 0.5rem;
+}
+.login{
+    @include toRem(width, 125);
+    @include toRem(height, 45);
+    color: #fff;
+    @include toRem(border-radius, 40.45);
+    background: $dark-green;
+    border :none;
 }

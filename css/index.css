@@ -3,15 +3,27 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+}
+
+body {
   color: #fff;
 }
 
-.section-one {
+.heading {
+  font-size: 2.52rem;
+  font-weight: 700;
+}
+
+section {
+  padding: 0 1.89rem;
+  margin-bottom: 3rem;
+}
+
+.landing-section {
   min-height: 100vh;
   position: relative;
-  padding: 0 1.89rem;
 }
-.section-one:before {
+.landing-section:before {
   content: "";
   position: absolute;
   top: 0;
@@ -30,13 +42,20 @@ nav {
 
 .logo {
   flex-grow: 1;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 .navigation {
-  display: flex;
   justify-content: space-evenly;
   flex-grow: 1;
   display: none;
+}
+@media only screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .landing {
@@ -52,8 +71,6 @@ nav {
 }
 
 .landing__heading {
-  font-size: 2.52rem;
-  font-weight: 700;
   margin-top: 1.701rem;
 }
 
@@ -119,11 +136,25 @@ nav {
   right: 0.5rem;
 }
 
+.login {
+  width: 7.875rem;
+  height: 2.835rem;
+  color: #fff;
+  border-radius: 2.54835rem;
+  background: #313415;
+  border: none;
+}
+
 .CTA-mobile {
   display: block;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .CTA-mobile {
+    display: none;
+  }
 }
 
 .btn {
@@ -142,6 +173,54 @@ nav {
 
 .btn--border {
   color: #313415;
+  background: #fff;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .products {
+    flex-direction: row;
+  }
+}
+
+.products__heading {
+  color: #313415;
+}
+
+.products__content {
+  color: #8b8b8b;
+  margin-top: 3rem;
+}
+
+.products__catalogue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+@media only screen and (min-width: 768px) {
+  .products__catalogue {
+    flex-direction: row;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #313415;
+  background: rgb(241, 240, 240);
+  width: 100%;
+  height: 30rem;
+  margin: 1rem;
+}
+.product:hover {
+  background: rgb(150, 149, 149);
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -5,6 +5,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include responsive{
+        display: none;
+    }
 }
 .btn{
     @include toRem(border-radius, 40.45);
@@ -20,4 +23,8 @@
 }
 .btn--border{
     color: $dark-green;
+    background: #fff;
+}
+.login{
+    
 }

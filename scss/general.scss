@@ -1,0 +1,10 @@
+@import "mixins";
+@import "variables";
+.heading{
+    @include toRem(font-size, 40);
+    font-weight: 700;
+}
+section{
+    padding: 0 $sm-screen-padding;
+    margin-bottom: 3rem;
+}
