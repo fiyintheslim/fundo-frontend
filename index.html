@@ -128,12 +128,14 @@
 
         burger.addEventListener("click", ()=>{
             if(open){
+                
                 menu.classList.add("open")
                 menu.classList.remove("close")
             }else{
                 menu.classList.remove("open")
                 menu.classList.add("close")
             }
+            open=!open
         })
     </script>
 </body>

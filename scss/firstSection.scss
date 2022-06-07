@@ -54,13 +54,31 @@ nav{
 .navigation{
     justify-content: space-evenly;
     flex-grow:1;
-    display: none;
+    position: fixed;
+    top: 7rem;
+    
+    width: 100%;
+    height: 90vh;
+    background: $dark_green;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.3s ease;
+
     a{
         cursor: pointer;
     }
     @include responsive{
-        display: flex;
+        position: static;
+
+        flex-direction: row;
         align-items: center;
+        width: initial;
+        height: initial;
+        background: none;
+        transition: none;
     }
 }
 .landing{
@@ -115,6 +133,9 @@ nav{
     @include toRem(margin-top, 27);
     position: relative;
     top: 4rem;
+    @include responsive{
+        top: 6rem;
+    }
 }
 .furniture{
     display: flex;
@@ -188,4 +209,10 @@ nav{
     background: $dark-green;
     border :none;
     cursor: pointer;
+}
+.open{
+    left: 0;
+}
+.close{
+    left: 100vw;
 }

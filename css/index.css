@@ -83,15 +83,30 @@ nav {
 .navigation {
   justify-content: space-evenly;
   flex-grow: 1;
-  display: none;
+  position: fixed;
+  top: 7rem;
+  width: 100%;
+  height: 90vh;
+  background: #313415;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.3s ease;
 }
 .navigation a {
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
   .navigation {
-    display: flex;
+    position: static;
+    flex-direction: row;
     align-items: center;
+    width: initial;
+    height: initial;
+    background: none;
+    transition: none;
   }
 }
 
@@ -158,6 +173,11 @@ nav {
   margin-top: 1.701rem;
   position: relative;
   top: 4rem;
+}
+@media only screen and (min-width: 768px) {
+  .landing__images {
+    top: 6rem;
+  }
 }
 
 .furniture {
@@ -246,6 +266,14 @@ nav {
   background: #313415;
   border: none;
   cursor: pointer;
+}
+
+.open {
+  left: 0;
+}
+
+.close {
+  left: 100vw;
 }
 
 .CTA-mobile {
