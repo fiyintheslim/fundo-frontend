@@ -10,6 +10,11 @@ body {
   color: #fff;
 }
 
+main {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 .heading {
   font-size: 2.52rem;
   font-weight: 700;
@@ -47,10 +52,41 @@ nav {
   font-size: 2rem;
 }
 
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 4rem;
+  height: 4rem;
+}
+@media only screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+.burger .line {
+  background: #fff;
+  height: 0.2rem;
+  border-radius: 3rem;
+}
+.burger .line1 {
+  width: 4rem;
+}
+.burger .line2 {
+  width: 3rem;
+}
+.burger .line3 {
+  width: 2rem;
+}
+
 .navigation {
   justify-content: space-evenly;
   flex-grow: 1;
   display: none;
+}
+.navigation a {
+  cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
   .navigation {
@@ -75,6 +111,18 @@ nav {
     flex-direction: row;
     text-align: left;
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .landing__text {
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .landing__images {
+    flex-grow: 2;
   }
 }
 
@@ -123,6 +171,7 @@ nav {
   margin: 0 auto;
   width: 10rem;
   height: 11rem;
+  position: relative;
 }
 .frames img {
   position: absolute;
@@ -130,21 +179,34 @@ nav {
 
 .frame1 {
   top: 0;
-  left: 5.2rem;
+  right: 5rem;
   width: 7.56rem;
   height: 6.3rem;
+}
+@media only screen and (min-width: 768px) {
+  .frame1 {
+    width: 8rem;
+    height: 6.5rem;
+    right: 4.5rem;
+  }
 }
 
 .frame2 {
   top: 0;
-  right: 5.2rem;
+  left: 5rem;
   width: 6.93rem;
   height: 9.45rem;
+}
+@media only screen and (min-width: 768px) {
+  .frame2 {
+    width: 9rem;
+    height: 10rem;
+  }
 }
 
 .frame3 {
   top: 5.3rem;
-  left: 7.5rem;
+  right: 5rem;
   width: 4.41rem;
   height: 3.78rem;
 }
@@ -155,6 +217,12 @@ nav {
   position: relative;
   left: 1rem;
 }
+@media only screen and (min-width: 768px) {
+  .sofa {
+    width: 40rem;
+    height: 20rem;
+  }
+}
 
 .lamp {
   width: 3.969rem;
@@ -162,6 +230,12 @@ nav {
   position: relative;
   bottom: 2rem;
   right: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .lamp {
+    width: 7rem;
+    height: 18.5rem;
+  }
 }
 
 .login {
@@ -171,6 +245,7 @@ nav {
   border-radius: 2.54835rem;
   background: #313415;
   border: none;
+  cursor: pointer;
 }
 
 .CTA-mobile {

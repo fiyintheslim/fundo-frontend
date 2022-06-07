@@ -5,8 +5,13 @@
     font-family: "Poppins", sans-serif;
     transition: background 0.3s ease;
 }
+
 body{
     color: #fff;
+}
+main{
+    max-width: 1800px;
+    margin: 0 auto;
 }
 @import "general.scss";
 @import "firstSection.scss";

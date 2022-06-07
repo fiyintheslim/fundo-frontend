@@ -23,9 +23,14 @@
                     <a>Contact Us</a>
                     <button class="login">Login</button>
                 </div>
+                <div class="burger">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
             </nav>
             <div class="landing">
-                <div>
+                <div class="landing__text">
                     <h3 class="heading landing__heading">Furniture that </br>everyone </br>Loves</h3>
                     <p class="landing__content">We have 5000+ Review and our customers trust 
                         on our Furniture and Quality products.
@@ -37,13 +42,33 @@
                 </div>
                 <div class="landing__images">
                     <div class="frames">
-                        <img class="frame1" src="resources/frame1.png" alt="picture frame">
-                        <img class="frame2" src="resources/frame2.png" alt="picture frame">
-                        <img class="frame3" src="resources/frame3.png" alt="picture frame">
+                        <img class="frame1" 
+                        srcset="resources/bigFrame1.png 88w, resources/frame1.png 64w"
+                        sizes="(min-width: 768px) 88px, 64px"
+                        src="resources/frame1.png" 
+                        alt="picture frame">
+                        <img class="frame2" 
+                        srcset="resources/bigFrame2.png 94w, resources/frame2.png 69w"
+                        sizes="(min-width: 768px) 94px, 69"
+                        src="resources/frame2.png" 
+                        alt="picture frame">
+                        <img class="frame3" 
+                        srcset="resources/bigFrame3.png 44w, resources/frame3.png 33w"
+                        sizes="(min-width: 768px) 44px, 33px"
+                        src="resources/frame3.png" 
+                        alt="picture frame">
                     </div>
                     <div class="furniture">
-                        <img class="sofa" src="resources/furniture1.png" alt="Sofa image"/>
-                        <img class="lamp" src="resources/lamp.png" alt="lamp image" />
+                        <img class="sofa"
+                            srcset="resources/bigSofa.png 319w, resources/furniture1.png 180w"
+                            sizes="(min-width: 768px) 319px, 180px"
+                            src="resources/furniture1.png" 
+                            alt="Sofa image"/>
+                        <img class="lamp" 
+                        srcset="resources/bigLamp.png 65w, resources/lamp.png 35w"
+                        sizes="(min-width:768px) 65px, 35px"
+                        src="resources/lamp.png"
+                        alt="lamp image" />
                     </div>
                 </div>
                 
@@ -96,5 +121,20 @@
             </div>
         </section>
     </main>
+    <script>
+        var open = false;
+        var burger = document.querySelector(".burger");
+        var menu = document.querySelector(".navigation")
+
+        burger.addEventListener("click", ()=>{
+            if(open){
+                menu.classList.add("open")
+                menu.classList.remove("close")
+            }else{
+                menu.classList.remove("open")
+                menu.classList.add("close")
+            }
+        })
+    </script>
 </body>
 </html>

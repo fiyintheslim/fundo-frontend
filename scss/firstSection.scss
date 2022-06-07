@@ -26,11 +26,38 @@ nav{
     font-weight: 800;
     font-size: 2rem;
 }
+.burger{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 4rem;
+    height: 4rem;
+    @include responsive{
+        display: none;
+    }
+    .line{
+        background: #fff;
+        height: 0.2rem;
+        border-radius: 3rem;
+    }
+    .line1{
+        width: 4rem;
+    }
+    .line2{
+        width: 3rem;
+    }
+    .line3{
+        width: 2rem;
+    }
+}
 .navigation{
     justify-content: space-evenly;
     flex-grow:1;
     display: none;
-    
+    a{
+        cursor: pointer;
+    }
     @include responsive{
         display: flex;
         align-items: center;
@@ -50,6 +77,17 @@ nav{
         flex-direction: row;
         text-align: left;
         justify-content: center;
+    }
+}
+.landing__text{
+    @include responsive{
+        flex-grow: 1;
+    }
+    
+}
+.landing__images{
+    @include responsive{
+        flex-grow: 2;
     }
 }
 
@@ -89,25 +127,35 @@ nav{
     margin: 0 auto;
     width:10rem;
     height: 11rem;
+    position: relative;
     img{
         position: absolute;
     }
 }
 .frame1{
     top:0;
-    left:5.2rem;
+    right:5rem;
     @include toRem(width, 120);
     @include toRem(height, 100);
+    @include responsive{
+        width: 8rem;
+        height: 6.5rem;
+        right:4.5rem;
+    }
 }
 .frame2{
     top:0;
-    right:5.2rem;
+    left:5rem;
     @include toRem(width, 110);
     @include toRem(height, 150);
+    @include responsive{
+        width: 9rem;
+        height: 10rem;
+    }
 }
 .frame3{
     top:5.3rem;
-    left:7.5rem;
+    right:5rem;
     @include toRem(width, 70);
     @include toRem(height, 60);
 }
@@ -116,6 +164,10 @@ nav{
     @include toRem(height, 200);
     position: relative;
     left: 1rem;
+    @include responsive{
+        width: 40rem;
+        height: 20rem;
+    }
 }
 .lamp{
     @include toRem(width, 63);
@@ -123,6 +175,10 @@ nav{
     position: relative;
     bottom: 2rem;
     right: 0.5rem;
+    @include responsive{
+        width: 7rem;
+        height: 18.5rem;
+    }
 }
 .login{
     @include toRem(width, 125);
@@ -131,4 +187,5 @@ nav{
     @include toRem(border-radius, 40.45);
     background: $dark-green;
     border :none;
+    cursor: pointer;
 }
