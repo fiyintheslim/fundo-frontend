@@ -1,0 +1,23 @@
+@import "mixins";
+@import "variables";
+.CTA-mobile{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    @include toRem(border-radius, 40.45);
+    border: solid 1px $dark-green;
+    @include toRem(width, 325);
+    @include toRem(height, 75);
+    @include toRem(font-size, 20);
+    margin: 1rem;
+}
+.btn--fill{
+    color: #fff;
+    background: $dark-green;
+}
+.btn--border{
+    color: $dark-green;
+}

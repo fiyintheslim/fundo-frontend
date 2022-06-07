@@ -58,8 +58,7 @@ nav{
     display: flex;
     justify-content: center;
     position: relative;
-    left: 1rem;
-    top:5rem;
+    
 }
 .frames{
     width: 10rem;
@@ -91,11 +90,13 @@ nav{
 .sofa{
     @include toRem(width, 320);
     @include toRem(height, 200);
+    position: relative;
+    left: 1rem;
 }
 .lamp{
     @include toRem(width, 63);
     @include toRem(height, 200);
     position: relative;
     bottom: 2rem;
-    right: 1.5rem;
+    right: 0.5rem;
 }

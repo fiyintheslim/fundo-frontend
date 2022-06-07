@@ -71,8 +71,6 @@ nav {
   display: flex;
   justify-content: center;
   position: relative;
-  left: 1rem;
-  top: 5rem;
 }
 
 .frames {
@@ -109,6 +107,8 @@ nav {
 .sofa {
   width: 20.16rem;
   height: 12.6rem;
+  position: relative;
+  left: 1rem;
 }
 
 .lamp {
@@ -116,7 +116,32 @@ nav {
   height: 12.6rem;
   position: relative;
   bottom: 2rem;
-  right: 1.5rem;
+  right: 0.5rem;
+}
+
+.CTA-mobile {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 2.54835rem;
+  border: solid 1px #313415;
+  width: 20.475rem;
+  height: 4.725rem;
+  font-size: 1.26rem;
+  margin: 1rem;
+}
+
+.btn--fill {
+  color: #fff;
+  background: #313415;
+}
+
+.btn--border {
+  color: #313415;
 }
 
 /*# sourceMappingURL=index.css.map */
