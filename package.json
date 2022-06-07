@@ -1,0 +1,19 @@
+{
+  "name": "fundo",
+  "version": "1.0.0",
+  "description": "Furniture frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiyintheslim/fundo-frontend.git"
+  },
+  "author": "Fiyin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiyintheslim/fundo-frontend/issues"
+  },
+  "homepage": "https://github.com/fiyintheslim/fundo-frontend#readme"
+}
