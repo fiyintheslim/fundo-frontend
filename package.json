@@ -4,7 +4,7 @@
   "description": "Furniture frontend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass -w scss/index.scss:css/index.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fiyintheslim/fundo-frontend/issues"
   },
-  "homepage": "https://github.com/fiyintheslim/fundo-frontend#readme"
+  "homepage": "https://github.com/fiyintheslim/fundo-frontend#readme",
+  "dependencies": {
+    "sass": "^1.52.2"
+  }
 }
