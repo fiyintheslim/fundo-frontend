@@ -172,7 +172,7 @@ nav {
 .landing__images {
   margin-top: 1.701rem;
   position: relative;
-  top: 4rem;
+  top: 0rem;
 }
 @media only screen and (min-width: 768px) {
   .landing__images {
