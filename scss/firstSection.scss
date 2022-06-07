@@ -46,6 +46,11 @@ nav{
     justify-content: space-evenly;
     text-align: center;
     @include toRem(margin-top, 40);
+    @include responsive{
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+    }
 }
 
 .landing__heading{
@@ -53,6 +58,20 @@ nav{
 }
 .landing__content{
     @include toRem(margin-top, 27);
+    @include responsive{
+        width: 22rem;
+    }
+}
+.CTA-desktop{
+    display: none;
+    @include responsive{
+        display: flex;
+    }
+}
+.CTA-desktop .btn{
+    width: 12rem;
+    height: 3.5rem;
+    font-size: 0.8rem;
 }
 .landing__images{
     @include toRem(margin-top, 27);

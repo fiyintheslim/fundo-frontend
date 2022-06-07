@@ -16,6 +16,7 @@
     @include toRem(height, 75);
     @include toRem(font-size, 20);
     margin: 1rem;
+    cursor: pointer;
 }
 .btn--fill{
     color: #fff;
